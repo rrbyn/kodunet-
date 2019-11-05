@@ -1,4 +1,4 @@
-n = 11
+n = 5
 k = 0
 arvud = []
 
@@ -7,4 +7,4 @@ while n != 0:
     k = k + 1
     n = n - 1
     
-print (arvud)
+print (str(arvud)[1:-1])
