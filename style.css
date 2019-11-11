@@ -1,0 +1,54 @@
+html, body{
+    height: calc(100% - 30px);
+    width: calc(100% - 30px)
+}
+
+.flex-item{
+    display:flex;
+    flex-direction: column;
+    background-color: lightblue;
+    width: calc(100% - 30px);
+}
+
+.nav{
+    background-color: green;
+    height: 300px;
+    width:100%;
+}
+
+.aside{
+    background-color: grey;
+    height:800px ;
+    width:300px ;
+}
+.abv{
+    background-color: green;
+    height:800px;
+    width:300px;
+}
+
+.main{
+    background-color: green;
+    height:600px;
+    width: 1100px;
+    margin: 100px;  
+}
+
+.footer{
+    background-color: grey;
+    height:300px;
+    width:100%;
+}
+.middle{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.flex-main{
+    flex: 3;
+}
+body {
+    display: flex;
+    flex-direction: row;
+}
