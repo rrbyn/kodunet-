@@ -1,5 +1,5 @@
 numbers = ["null","üks","kaks","kolm","neli","viis","kuus","seitse","kaheksa","üheksa","kümme"]
-nr = 110
+nr = 12
 k = (nr % 100)
 n = ((nr - k) / 100)
 p = nr - (n * 100)
@@ -12,7 +12,10 @@ if nr >= 100:
     if p > 19 and l != 0 and m != 0:
         print (numbers[int(n)] + "sada " + (numbers[int(l)]) + "kümmend " + numbers[int(m)])
     elif l != 0 and p < 20:
-        print (numbers[int(n)] + "sada " + numbers[int(m)] + "teist")
+        if p == 10:
+            print (numbers[int(n)] + "sada " + "kümme")
+        else:
+            print (numbers[int(n)] + "sada " + numbers[int(m)] + "teist")
     elif l == 0 and m != 0:
         print (numbers[int(n)] + "sada " + numbers[int(m)])
     elif m == 0 and l != 0:
